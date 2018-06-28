@@ -1,0 +1,28 @@
+<div id="manager-panel" class="panel panel-default">
+    <div class="panel-heading">
+        {{title}}
+        <button class="btn btn-sm btn-default" style="float:right;padding:0px 5px;margin:0px" (click)="closeDynamicTab()">X</button>
+    </div>
+    <div class="panel-body">
+        <div class="panelbar-wrapper">
+            <div id="childTree"></div>
+            <ul id="resources-context-menu"></ul>
+            <div class="tab-container" id="grid">
+                <div id="tab-panel">
+                    <ul id="tabs" class="nav nav-tabs nav-tabs-modified">
+                        <li class="active"><a data-target="#k-ui-rt-grid" data-toggle="tab">Resource Types</a></li>
+                        <li><a data-target="#k-ui-r-grid" data-toggle="tab">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div id="k-ui-rt-grid" class="tab-pane fade in active">
+                        <!-- <div id="k-ui-rt-grid"></div> -->
+                    </div>
+                    <div id="k-ui-r-grid" class="tab-pane fade">
+                        <!-- <div id="k-ui-r-grid"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>

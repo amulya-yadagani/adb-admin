@@ -1,0 +1,25 @@
+<div class="app-user-container">
+    <form class="k-form-inline k-form-inline__modifier">
+        <div class="form-group form-group_modifier">
+            <label class="k-form-field">
+                Application :                        
+            </label>
+            <kendo-multiselect #appmultiselect id="appSelection" placeholder="Select Applications" [disabled]="appDisabled" [data]="appData" [valueField]="'name'" (open)="openPopup()" [textField]="'name'" name="application" [(ngModel)]="appSelected" (valueChange)="appValueChange($event)" (close)="onAppMultiClose($event)" (removeTag)="onAppRemove($event)"></kendo-multiselect>
+        </div>
+        <div class="btn-group btn-group_modifier">
+            <button type="button" [ngClass]="{'logic-enabled-btn_modified': eachBtn.selected}"  class="btn btn-xs logic-disabled-btn_modified" *ngFor="let eachBtn of enableLogicBtn.info" [disabled]="eachBtn.disabled" (click)="toggleORANDBtn(eachBtn)">
+                {{eachBtn.text}}
+            </button>
+        </div>
+        <div class="form-group form-group_modifier">
+            <label class="k-form-field">
+                Roles :                      
+            </label>
+            <kendo-multiselect #rolemultiselect id="roleSelection" placeholder="Select Roles" [disabled]="rolesDisabled" [data]="appRoles"  [valueField]="'roleName'" (open)="openPopup()" [textField]="'roleName'" name="roles" [(ngModel)]="roleSelected" (valueChange)="rolesValueChange($event)" (close)="onRoleMultiClose($event)" (removeTag)="onRoleRemove($event)"></kendo-multiselect>
+        </div>
+        <div class="btn-group btn-group_modifier">
+            <button class="btn btn-xs app-export_modified" (click)="exportToExcel()" [disabled]="exportDisabled">Export</button>
+        </div>
+    </form>
+    <div id="app-user-grid"></div>
+</div>

@@ -1,0 +1,54 @@
+<div class="account-details-container">
+    <div class="account-header-container">
+        <h3 class="account-header-name">{{accountTitle||'Account Name'}}</h3>
+    </div>
+    <div id="vertical">
+        <div id="account-form">
+            <form class="account-fields-container" #userForm="ngForm" novalidate (change)="onFormChange($event,userForm)">
+                <div id="account-fields-left-container" class="account-fields-sub-container">
+                    <!--For acountName we are not using two way binding because the same is wtitten back to the object wihch we do not want as accountName cannot be edited - Jasmine-->
+                    <div class="account-field-container"><label>Account Name</label><input class="accountField" type="text" name="accountName" [value]="user.accountName" autocomplete="on" (keyup.enter)="onFieldSearchValidateAccount($event)" (keyup)="clearUsrAccountOnKeyPress($event)" [disabled]="false" /></div>
+                    <div class="account-field-container"><label>First Name</label><input class="accountField" type="text" name="firstName" [(ngModel)]="user.firstName" autocomplete="off" [disabled]="true" /></div>
+                    <div class="account-field-container"><label>Last Name</label><input class="accountField" type="text" name="lastName" [(ngModel)]="user.lastName" autocomplete="off" [disabled]="true" /></div>
+                    <div class="account-field-container"><label>Account Type</label><input class="accountField" type="text" name="accountType" [(ngModel)]="user.type" autocomplete="off" [disabled]="true" /></div>
+                    <div class="account-field-container"><label>Status</label><input class="accountField" type="text" name="status" [(ngModel)]="user.status" autocomplete="off" [disabled]="true" /></div>
+                </div>
+                <div id="account-fields-right-container" class="account-fields-sub-container">
+                    <div class="account-field-container"><label>Department</label><input class="accountField" type="text" name="department" [(ngModel)]="user.department" autocomplete="off" [disabled]="true" /></div>
+                    <div class="account-field-container"><label>Company</label><input class="accountField" type="text" name="company" [(ngModel)]="user.company" autocomplete="off" [disabled]="activeMemberTab" /></div>
+                    <div class="account-field-container">
+                        <label id="emailFieldLabel">Email</label>
+                        <input #usrAccEmail="ngModel" class="accountField" [ngClass]="{'invalidEmail' : usrAccEmail.dirty && usrAccEmail.valid}" type="text" name="email" [(ngModel)]="user.emailAddress" autocomplete="off" [disabled]="activeMemberTab" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" (input)=onEmailInput(userForm)/>
+                        <span *ngIf="usrAccEmail.errors" class="errorMsg k-icon k-i-warning"></span>
+                    </div>
+                    <div class="account-field-container">
+                        <label id="phoneFieldLabel">Phone</label>
+                        <input id="phoneField" #usrAccPhone="ngModel" class="accountField" type="text" name="phone" [(ngModel)]="user.phoneNumber" autocomplete="off" [disabled]="activeMemberTab" />
+                        <span id="phoneErrorMsg" class="errorMsg k-icon k-i-warning"></span>
+                    </div>
+                    <div class="account-field-container"><label>IsActive</label><span><input class="accountField" type="checkbox" name="isActive" [(ngModel)]="user.isActive" autocomplete="off" [disabled]="true"/></span></div>
+                </div>
+            </form>
+            <div class="account-btns-section">
+                <button class="account-validate account-btn k-button" (click)="refreshMembership()" [disabled]="!usrFormMembership">Refresh Membership</button>
+                <button class="account-add account-btn k-button" [disabled]="!usrFormAdd" (click)="addAccount()">Add</button>
+                <button class="account-cancel account-btn k-button" (click)="clearUsrAccount()" [disabled]="!usrFormSearched">Clear</button>
+            </div>
+        </div>
+        <div class="account-fields-nav-container">
+            <div class="account-fields-nav-links">
+                <ul class="nav nav-tabs-modified nav-tabs">
+                    <li [style.display]="(activeMemberTab == true) ? 'block': 'none'"><a routerLink="members" routerLinkActive="active">Members</a></li>
+                    <li><a routerLink="groups" routerLinkActive="active">Groups</a></li>
+                    <li><a routerLink="roles" routerLinkActive="active">Roles</a></li>
+                    <li><a routerLink="authorizations" routerLinkActive="active">Authorizations</a></li>
+                    <li><a routerLink="impersonations" routerLinkActive="active" *ngIf="activeImpersonationTab">Impersonations</a></li>
+                </ul>
+            </div>
+            <div class="account-sub-router">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div><!-- end of Verticle id -->
+    <!-- <div kendoDialogContainer></div> -->
+</div><!-- end of account-details-container -->

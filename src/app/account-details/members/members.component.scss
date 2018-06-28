@@ -1,0 +1,117 @@
+@import "../../../styles-variables.scss";
+
+#members-grid {
+  height: 98%;
+  .k-grid-content{
+    .accountLink {
+      color: $nav-button-active-background;
+      cursor: pointer;
+    }
+    .accountLink:hover {
+      color: $nav-background;
+    }
+    .activeUser {
+      color: $color-inActive;
+    }
+  }
+  .k-grid-toolbar {
+    padding: 0px;
+  }
+}
+
+.member-search-con {
+  padding: 2px;
+  display: inline-block;
+  label {
+    margin-bottom: 0;
+    font-weight: normal;
+  }
+}
+
+.member-search {
+  border: 1px solid #cccccc;
+  padding: 4px;
+  width: 150px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+#member-search-result {
+  list-style: none;
+  margin: 0 0 0 25px;
+  position: fixed;
+  border: 1px solid $color-shadow;
+  max-height: 200px;
+  overflow: auto;
+  box-shadow: 2px 2px 2px $color-shadow;
+  background-color: $color-white;
+  z-index: 10;
+  padding-left: 5px;
+  white-space: nowrap;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+
+  li {
+    cursor: default;
+  }
+
+  li * {
+    display: inline-block;
+  }
+
+  div.icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: sub;
+    pointer-events: none;
+  }
+
+  span.displayname {
+    margin-top: 2px;
+    margin-right: 20px;
+    padding: 4px;
+  }
+
+  span.displayname:hover {
+      background-color: $hover-background;
+      color: $color-black;
+  }
+}
+
+.k-button-icontext > .k-i-delete {
+  margin: 0;
+}
+
+.k-grid-header .k-header {
+  padding: 5px 2px;
+  //padding:  0px;
+}
+
+.k-grid-header .k-header > .k-link {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+
+.k-grid-content td {
+  padding: 2px;
+}
+.k-grid > table > tbody > tr:hover,
+.k-grid-content > table > tbody > tr:hover
+{
+  @include backgroundGradientTopDown($color-selected-top, $color-selected-bottom);
+}
+.k-grid-content > table > tbody > tr > td > span, span.inActiveUser {
+  white-space: nowrap;
+}
+
+form.k-filter-menu {
+  input[type=radio] {
+    margin-right: 5px;
+  }
+
+  label {
+    padding-right: 5px;
+  }
+}

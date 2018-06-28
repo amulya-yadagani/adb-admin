@@ -1,0 +1,12 @@
+{
+    "model":[
+        {"parentResourceId":null,"resourceMappingId":1,"type": "Application","name":"CircManagerNet","spriteCssClass":"application"},
+        {"parentResourceId":null,"resourceMappingId":2,"type": "Application","name":"ADBAdmin","spriteCssClass":"application"},
+        {"parentResourceId":null,"resourceMappingId":3,"type": "Application","name":"JobTrackerTAG","spriteCssClass":"application"},
+        {"parentResourceId":null,"resourceMappingId":4,"type": "Application","name":"CircManagerRestriction","spriteCssClass":"application"},
+        {"parentResourceId":null,"resourceMappingId":5,"type": "Application","name":"CircManagerNetExt","spriteCssClass":"application"},
+        {"parentResourceId":null,"resourceMappingId":6,"type": "Application","name":"CircManagerNetIntl","spriteCssClass":"application"},
+        {"parentResourceId":null,"resourceMappingId":7,"type": "Application","name":"AuthorizationCampaign","spriteCssClass":"application"},
+        {"parentResourceId":null,"resourceMappingId":8,"type": "Application","name":"DMCampaign","spriteCssClass":"application"}
+    ]
+}

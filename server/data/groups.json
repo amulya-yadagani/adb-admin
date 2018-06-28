@@ -1,0 +1,28 @@
+[
+    {
+        "name": "ADB Groups",
+        "sub": [
+            {
+                "name": "BangaloreDevTeam",
+                "expanded": true,
+                "sub": [
+                    
+                ],
+
+                "spriteCssClass": "group"
+            }
+        ],
+        "spriteCssClass": "k-icon k-i-folder"
+    },
+    {
+        "name": "AD Groups",
+        "spriteCssClass": "k-icon k-i-folder"
+    },
+    {
+        "name": "Individuals",
+        "spriteCssClass": "k-icon k-i-folder",
+        "sub": [
+            
+        ]
+    }
+]

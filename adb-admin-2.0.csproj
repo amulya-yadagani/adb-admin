@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0168CA70-ADD8-4692-89A6-4FB8E36F6933}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>adb_admin_2._0</RootNamespace>
+    <AssemblyName>adb-admin-2.0</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="e2e\app.e2e-spec.ts" />
+    <Content Include="e2e\app.po.ts" />
+    <Content Include="karma.conf.js" />
+    <Content Include="protractor.conf.js" />
+    <Content Include="scripts\distServer.js" />
+    <Content Include="scripts\updateVersion.js" />
+    <Content Include="server\controllers\data.js" />
+    <Content Include="server\server.js" />
+    <Content Include="src\app\account-details\account-details.component.html" />
+    <Content Include="src\app\account-details\authorization\authorization.component.html" />
+    <Content Include="src\app\account-details\grid\shared-grid.component.html" />
+    <Content Include="src\app\account-details\groups\groups.component.html" />
+    <Content Include="src\app\account-details\impersonations\impersonations.component.html" />
+    <Content Include="src\app\account-details\members\members.component.html" />
+    <Content Include="src\app\account-details\roles\roles.component.html" />
+    <Content Include="src\app\accounts\accounts.component.html" />
+    <Content Include="src\app\accounts\accounts.component.spec.ts" />
+    <Content Include="src\app\accounts\accounts.component.ts" />
+    <Content Include="src\app\accounts\accounts.service.spec.ts" />
+    <Content Include="src\app\accounts\accounts.service.ts" />
+    <Content Include="src\app\app-resources\app-resources.component.html" />
+    <Content Include="src\app\app-resources\app-resources.component.spec.ts" />
+    <Content Include="src\app\app-resources\app-resources.component.ts" />
+    <Content Include="src\app\app-resources\app-resources.service.spec.ts" />
+    <Content Include="src\app\app-resources\app-resources.service.ts" />
+    <Content Include="src\app\app-users\app-users.component.html" />
+    <Content Include="src\app\app-users\app-users.component.ts" />
+    <Content Include="src\app\app.component.html" />
+    <Content Include="src\app\app.component.spec.ts" />
+    <Content Include="src\app\app.component.ts" />
+    <Content Include="src\app\app.module.ts" />
+    <Content Include="src\app\app.routing.ts" />
+    <Content Include="src\app\app.service.ts" />
+    <Content Include="src\app\audit-log\audit-log.component.html" />
+    <Content Include="src\app\audit-log\audit-log.component.ts" />
+    <Content Include="src\app\directives\anchor.directive.ts" />
+    <Content Include="src\app\impersonation\impersonation.component.html" />
+    <Content Include="src\app\impersonation\impersonation.component.ts" />
+    <Content Include="src\app\resource-manager\resource-manager.component.html" />
+    <Content Include="src\app\resource-manager\resource-manager.component.spec.ts" />
+    <Content Include="src\app\resource-manager\resource-manager.component.ts" />
+    <Content Include="src\app\resource-manager\resource.component.html" />
+    <Content Include="src\app\resource-manager\resource.component.spec.ts" />
+    <Content Include="src\app\resource-manager\resource.component.ts" />
+    <Content Include="src\app\resource-manager\resource.service.spec.ts" />
+    <Content Include="src\app\resource-manager\resource.service.ts" />
+    <Content Include="src\app\resource-manager\resourcesJson.ts" />
+    <Content Include="src\app\resource-manager\resourceTypesJson.ts" />
+    <Content Include="src\app\state\actions.ts" />
+    <Content Include="src\app\state\app-state.service.ts" />
+    <Content Include="src\app\utils\constants.ts" />
+    <Content Include="src\app\utils\custom-reuse.ts" />
+    <Content Include="src\app\utils\loader.service.ts" />
+    <Content Include="src\app\utils\logger.service.spec.ts" />
+    <Content Include="src\app\utils\logger.service.ts" />
+    <Content Include="src\app\utils\messages.ts" />
+    <Content Include="src\app\utils\notification.service.spec.ts" />
+    <Content Include="src\app\utils\notification.service.ts" />
+    <Content Include="src\app\utils\parser-util.ts" />
+    <Content Include="src\assets\application.png" />
+    <Content Include="src\assets\authority.png" />
+    <Content Include="src\assets\cluster.png" />
+    <Content Include="src\assets\current.png" />
+    <Content Include="src\assets\division.png" />
+    <Content Include="src\assets\edit.png" />
+    <Content Include="src\assets\folder.png" />
+    <Content Include="src\assets\group.png" />
+    <Content Include="src\assets\individual.png" />
+    <Content Include="src\assets\individuals.png" />
+    <Content Include="src\assets\logo.png" />
+    <Content Include="src\assets\module.png" />
+    <Content Include="src\assets\noimage.png" />
+    <Content Include="src\assets\permission.png" />
+    <Content Include="src\assets\permissiongroup.png" />
+    <Content Include="src\assets\person.png" />
+    <Content Include="src\assets\provisional.png" />
+    <Content Include="src\assets\role.png" />
+    <Content Include="src\assets\title.png" />
+    <Content Include="src\environments\environment.prod.ts" />
+    <Content Include="src\environments\environment.ts" />
+    <Content Include="src\index.html" />
+    <Content Include="src\main.ts" />
+    <Content Include="src\polyfills.ts" />
+    <Content Include="src\test.ts" />
+    <Content Include="src\typings.d.ts" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".angular-cli.json" />
+    <None Include=".babelrc" />
+    <None Include=".editorconfig" />
+    <None Include="e2e\tsconfig.e2e.json" />
+    <None Include="package.json" />
+    <None Include="README.md" />
+    <Content Include="src\app\account-details\account-details.component.scss" />
+    <Content Include="src\app\account-details\authorization\authorization.component.scss" />
+    <Content Include="src\app\account-details\grid\shared-grid.component.scss" />
+    <Content Include="src\app\account-details\groups\groups.component.scss" />
+    <Content Include="src\app\account-details\impersonations\impersonations.component.scss" />
+    <Content Include="src\app\account-details\members\members.component.scss" />
+    <Content Include="src\app\account-details\roles\roles.component.scss" />
+    <None Include="server\data\applications.json" />
+    <None Include="server\data\groups.json" />
+    <None Include="server\data\groups.json.bkp" />
+    <None Include="server\data\resource-tree.json" />
+    <None Include="server\data\resources.json" />
+    <None Include="server\data\resourceTypes.json" />
+    <None Include="src\app\accounts\accounts.component.scss" />
+    <None Include="src\app\app-resources\app-resources.component.scss" />
+    <None Include="src\app\app-users\app-users.component.scss" />
+    <None Include="src\app\app.component.scss" />
+    <Content Include="src\app\impersonation\impersonation.component.scss" />
+    <Content Include="src\app\audit-log\audit-log.component.scss" />
+    <None Include="src\app\resource-manager\resource-manager.component.scss" />
+    <None Include="src\app\resource-manager\resource.component.scss" />
+    <Content Include="src\assets\account-authorization.json" />
+    <Content Include="src\assets\account-groups.json" />
+    <Content Include="src\assets\account-impersonations.json" />
+    <Content Include="src\assets\account-members.json" />
+    <Content Include="src\assets\account-resource.json" />
+    <Content Include="src\assets\account-roles.json" />
+    <Content Include="src\assets\account-user.json" />
+    <None Include="src\styles-variables.scss" />
+    <None Include="src\styles.scss" />
+    <None Include="src\tsconfig.app.json" />
+    <None Include="src\tsconfig.spec.json" />
+    <None Include="tsconfig.json" />
+    <None Include="tslint.json" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\account-details\account-details.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\account-details\account-details.component.ts" />
+    <TypeScriptCompile Include="src\app\account-details\account-details.service.spec.ts" />
+    <TypeScriptCompile Include="src\app\account-details\account-details.service.ts" />
+    <TypeScriptCompile Include="src\app\account-details\authorization\authorization.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\account-details\authorization\authorization.component.ts" />
+    <TypeScriptCompile Include="src\app\account-details\grid\shared-grid.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\account-details\grid\shared-grid.component.ts" />
+    <TypeScriptCompile Include="src\app\account-details\groups\groups.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\account-details\groups\groups.component.ts" />
+    <TypeScriptCompile Include="src\app\account-details\impersonations\impersonations.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\account-details\impersonations\impersonations.component.ts" />
+    <TypeScriptCompile Include="src\app\account-details\members\members.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\account-details\members\members.component.ts" />
+    <TypeScriptCompile Include="src\app\account-details\roles\roles.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\account-details\roles\roles.component.ts" />
+    <TypeScriptCompile Include="src\app\audit-log\audit-log.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\audit-log\audit-log.service.spec.ts" />
+    <TypeScriptCompile Include="src\app\audit-log\audit-log.service.ts" />
+    <TypeScriptCompile Include="src\app\impersonation\impersonation.service.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55263</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

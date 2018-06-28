@@ -1,0 +1,113 @@
+@import "../styles-variables.scss";
+
+@mixin border($thickness, $styleType, $styleColor) {
+    border: $thickness $styleType $styleColor;
+}
+
+#header-nav {
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: space-between;
+    h3 {
+        margin: 0 0 0 5px;
+        font-weight: bold;
+        font-weight: 700;
+        flex: 1;
+    }
+    .cust-header-nav-links {
+        border: none;
+        & > li {
+            border-right: 1px solid $nav-button-hover-background;
+            padding: 1px 4px;
+            .cust-header-nav-btn {
+                width: 6em;
+                color: $color-white;
+                background: $nav-background; // $nav-Button-Background;
+            }
+            .cust-header-nav-btn:hover {
+                color: $color-white;
+                background: $nav-button-hover-background;
+            }
+            .cust-header-nav-btn:active {
+                color: $color-white;
+                background: $nav-button-active-background;
+            }
+        }
+        li:last-child {
+            border-right: none;
+        }
+    }
+}
+
+.user {
+  align-self: center;
+  border-right: 1px solid #787878;
+  padding: 5px 20px 5px 0;
+  font-size: 12px;
+
+  & > span {
+    font-weight: bold
+  }
+}
+
+#divided-box {
+    height: calc(100% - 50px);
+    top: 0;
+    bottom: 0;
+    border-width: 0px;
+    position: relative;
+}
+
+#tab-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+#tabBody {
+    overflow: hidden;
+    padding: 2px 0.6em 0.6em 0.6em;
+    background: $color-inner-border;
+    box-sizing: border-box;
+    border: solid 1px $color-outer-border;
+    flex-grow: 1;
+    height: 95vh;
+}
+
+#actions {
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  background-color: #FFF;
+  padding-left: 0px;
+  border: 1px solid #CCC;
+  box-shadow: 2px 2px 2px $color-shadow;
+  z-index: 15;
+  display: none;
+  color: #000000;
+
+  & > li {
+    cursor: default;
+    padding: 5px;
+    white-space: nowrap;
+    font-size: 12px;
+    cursor: pointer;
+
+    & > span {
+      vertical-align: top;
+    }
+  }
+
+  & > li:hover {
+    background-color: $hover-background;
+    color: $color-black;
+  }
+}
+
+#appForm{
+    padding: 0px;
+    .error-field{        
+        margin-top: 5px;
+        color: #f31700;
+    }
+}

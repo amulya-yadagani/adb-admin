@@ -1,0 +1,85 @@
+@import "../../styles-variables.scss";
+
+
+
+.app-user-container {
+    // height: 100%;
+    // box-sizing: border-box;
+    .k-form-field {
+        span {
+            padding: 0px !important;
+        }
+    }
+}
+#app-user-grid {
+    height: 100% !important;
+    box-sizing: border-box !important;
+    .k-resize-handle {
+        background: none !important;
+    }
+    td {
+        white-space: nowrap;
+    }
+    .account-link {
+        cursor: pointer;
+        color: $nav-button-active-background !important;
+    }
+    .k-grid-content {
+        height: 69vh;
+    }
+}
+.k-multiselect-wrap {
+    max-height: 26px;
+}
+#appSelection, #roleSelection {
+    max-height: 80px;
+    max-width: 38rem !important;
+    min-width: 26rem !important;
+    overflow: auto;
+}
+.btn-group {
+    display: flex;
+    height: 2.6rem;
+    .logic-disabled-btn_modified {
+        @include selected-gradient-background($inner-panelTab-top-background, $inner-panelTab-bottom-background);
+        @include border($color-black 1px solid);
+        color: $color-black;
+        &:hover {
+            @include selected-gradient-background($color-selected-top, $color-selected-bottom);
+            color: $color-black;
+        }
+        &:active {
+            @include selected-gradient-background($color-selected-top, $color-selected-bottom);
+            color: $color-black;
+        }
+    }
+    .logic-enabled-btn_modified {
+        @include selected-gradient-background($color-selected-top, $color-selected-bottom);
+        color: $color-black;
+    }
+    .app-export_modified {
+        @include selected-gradient-background($inner-panelTab-top-background, $inner-panelTab-bottom-background);
+        color: $color-black;
+    }
+}
+.k-form-inline__modifier {
+    display: flex;
+    .form-group_modifier {
+        flex-grow: 2;
+        label {
+            justify-content: flex-end;
+            min-width: 8rem;
+            flex-wrap: nowrap;
+            margin: 0px !important;
+            line-height: 2.5rem !important;
+        }
+        display: flex;
+    }
+    .btn-group_modifier {
+        justify-content: center;
+        flex-grow: 1;
+    }
+}
+.isInactive {
+    color: $color-inActive !important;
+}

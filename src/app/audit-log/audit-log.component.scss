@@ -1,0 +1,30 @@
+@import "../../styles-variables.scss";
+
+
+
+.k-grid-header .k-header {
+    padding:  4px;
+    text-align: center;
+}
+.k-grid-header .k-header > .k-link {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+.k-grid-content td {
+    padding: 4px;
+    white-space: nowrap;
+}
+.k-grid > table > tbody > tr:hover,
+.k-grid-content > table > tbody > tr:hover
+{
+    @include backgroundGradientTopDown($color-selected-top, $color-selected-bottom);
+}   
+.k-grid-content > table > tbody > tr > td > span, span.inActiveUser {
+    white-space: nowrap;
+}
+
+.delUsrLink, .accDisLink {
+    color: $nav-button-active-background !important;
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+@import "../../styles-variables.scss";
+
+#k-ui-grid {
+  height: calc(100% - 72px);
+}
+
+#k-ui-grid .accountLink {
+  color: $nav-button-active-background;
+  cursor: pointer;
+}
+
+.accountLink:hover {
+  color: $nav-background;
+}

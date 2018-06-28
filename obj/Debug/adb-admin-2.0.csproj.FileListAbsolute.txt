@@ -1,0 +1,5 @@
+C:\work\ADB-ADMIN\adb-admin-2.0-dev\adb-admin-2.0\bin\adb-admin-2.0.dll
+C:\work\ADB-ADMIN\adb-admin-2.0-dev\adb-admin-2.0\bin\adb-admin-2.0.pdb
+C:\work\ADB-ADMIN\adb-admin-2.0-dev\adb-admin-2.0\obj\Debug\adb-admin-2.0.csprojResolveAssemblyReference.cache
+C:\work\ADB-ADMIN\adb-admin-2.0-dev\adb-admin-2.0\obj\Debug\adb-admin-2.0.dll
+C:\work\ADB-ADMIN\adb-admin-2.0-dev\adb-admin-2.0\obj\Debug\adb-admin-2.0.pdb

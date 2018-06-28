@@ -1,0 +1,452 @@
+[
+    {
+        "parentResourceId": null,
+        "resourceMappingId": 1,
+        "name": "CircManagerNet",
+        "spriteCssClass": "application"
+    },
+    {
+      "parentResourceId": 1,
+      "resourceMappingId": 9,
+      "name": "AMERICAN EXPRESS",
+      "spriteCssClass": "cluster"
+    },
+    {
+        "parentResourceId": 1,
+        "resourceMappingId": 10,
+        "name": "NATIONAL GEOGRAPHIC",
+        "spriteCssClass": "cluster"
+    },
+    {
+      "parentResourceId": 10,
+      "resourceMappingId": 100,
+        "name": "DM_MARKETING_USER",
+        "spriteCssClass": "role"
+    },
+    {
+      "parentResourceId": 10,
+      "resourceMappingId": 101,
+        "name": "LS - Little Kids",
+        "spriteCssClass": "title"
+    },
+    {
+      "parentResourceId": 10,
+      "resourceMappingId": 102,
+        "name": "NA - NG Adventure",
+        "spriteCssClass": "title"
+    },
+    {
+      "parentResourceId": 10,
+      "resourceMappingId": 103,
+        "name": "NG - National Geographic",
+        "spriteCssClass": "title"
+    },
+    {
+      "parentResourceId": 10,
+      "resourceMappingId": 104,
+        "name": "TR - NG Traveler",
+        "spriteCssClass": "title"
+    },
+    {
+      "parentResourceId": 1,
+      "resourceMappingId": 13,
+      "name": "FOREIGN AFFAIRS",
+      "spriteCssClass": "cluster"
+    },
+    {
+        "parentResourceId": 1,
+        "resourceMappingId": 14,
+        "name": "HBR",
+        "spriteCssClass": "cluster"
+    },
+    {
+        "parentResourceId": 1,
+        "resourceMappingId": 15,
+        "name": "IPC MEDIA",
+        "spriteCssClass": "cluster"
+    },
+    {
+        "parentResourceId": 1,
+        "resourceMappingId": 16,
+        "name": "MARTHA STEWART",
+        "spriteCssClass": "cluster"
+    },
+    {
+        "parentResourceId": 1,
+        "resourceMappingId": 17,
+        "name": "TIME INC",
+        "spriteCssClass": "cluster"
+    },
+    {
+        "parentResourceId": 1,
+        "resourceMappingId": 18,
+        "name": "ADBAdministrator",
+        "spriteCssClass": "permission"
+    },
+    {
+        "parentResourceId": 1,
+        "resourceMappingId": 19,
+        "name": "ADBDeveloper",
+        "spriteCssClass": "permission"
+    },
+    {
+        "parentResourceId": 1,
+        "resourceMappingId": 20,
+        "name": "DM_ADMIN",
+        "spriteCssClass": "permission"
+    },
+    {
+        "parentResourceId": 1,
+        "resourceMappingId": 21,
+        "name": "DM_MARKETING_USER",
+        "spriteCssClass": "permission"
+    },
+    {
+        "parentResourceId": 1,
+        "resourceMappingId": 22,
+        "name": "DM_ADMIN",
+        "spriteCssClass": "role"
+    },
+    {
+        "parentResourceId": 1,
+        "resourceMappingId": 23,
+        "name": "DM_MARKETING_USER",
+        "spriteCssClass": "role"
+    },
+    {
+      "parentResourceId": 9,
+      "resourceMappingId": 68,
+        "name": "DM_MARKETING_USER",
+        "spriteCssClass": "role"
+    },
+    {
+      "parentResourceId": 9,
+      "resourceMappingId": 69,
+        "name": "AB - Appt Books",
+        "spriteCssClass": "title"
+    },
+    {
+      "parentResourceId": 9,
+      "resourceMappingId": 71,
+        "name": "AE - American Express Multi-Title",
+        "spriteCssClass": "title"
+    },
+    {
+      "parentResourceId": 9,
+      "resourceMappingId": 72,
+        "name": "CC - F&W Connoisseur Club",
+        "spriteCssClass": "title"
+    },
+    {
+      "parentResourceId": 9,
+      "resourceMappingId": 73,
+        "name": "WI - Food & Wine",
+        "spriteCssClass": "title"
+    },
+    {
+        "parentResourceId": null,
+        "resourceMappingId": 2,
+        "name": "ADBAdmin",
+        "spriteCssClass": "application"
+    },
+    {
+      "parentResourceId": 2,
+      "resourceMappingId": 24,
+      "name": "ADBAdministrator",
+      "spriteCssClass": "permission"
+    },
+    {
+        "parentResourceId": 2,
+        "resourceMappingId": 25,
+        "name": "ADBDeveloper",
+        "spriteCssClass": "permission"
+    },
+    {
+        "parentResourceId": 2,
+        "resourceMappingId": 26,
+        "name": "ADBAdministrator",
+        "spriteCssClass": "role"
+    },
+    {
+        "parentResourceId": 2,
+        "resourceMappingId": 27,
+        "name": "ADBDeveloper",
+        "spriteCssClass": "role"
+    },
+    {
+        "parentResourceId": null,
+        "resourceMappingId": 3,
+        "name": "JobTrackerTAG",
+        "spriteCssClass": "application"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 28,
+      "name": "All Job Requests",
+      "spriteCssClass": "cluster"
+    },
+    {
+      "parentResourceId": 28,
+      "resourceMappingId": 51,
+        "name": "User",
+        "spriteCssClass": "permission"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 29,
+      "name": "All Sources",
+      "spriteCssClass": "cluster"
+    },
+    {
+      "parentResourceId": 29,
+      "resourceMappingId": 52,
+        "name": "User",
+        "spriteCssClass": "permission"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 30,
+      "name": "All Titles",
+      "spriteCssClass": "cluster"
+    },
+    {
+      "parentResourceId": 30,
+      "resourceMappingId": 53,
+        "name": "User",
+        "spriteCssClass": "permission"
+    },
+    {
+      "parentResourceId": 30,
+      "resourceMappingId": 54,
+        "name": "Foreign Affairs",
+        "spriteCssClass": "cluster"
+    },
+    {
+      "parentResourceId": 54,
+      "resourceMappingId": 55,
+        "name": "User",
+        "spriteCssClass": "permission"
+    },
+    {
+      "parentResourceId": 54,
+      "resourceMappingId": 56,
+        "name": "FF - Foreign Affairs",
+        "spriteCssClass": "title"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 31,
+        "name": "D - Direct Mail",
+        "spriteCssClass": "edit"
+    },
+    {
+      "parentResourceId": 31,
+      "resourceMappingId": 57,
+        "name": "User",
+        "spriteCssClass": "permission"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 32,
+        "name": "I - Insert Cards/Wraps/Ads",
+        "spriteCssClass": "edit"
+    },
+    {
+      "parentResourceId": 32,
+      "resourceMappingId": 58,
+        "name": "User",
+        "spriteCssClass": "permission"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 33,
+        "name": "O - Other",
+        "spriteCssClass": "edit"
+    },
+    {
+      "parentResourceId": 33,
+      "resourceMappingId": 59,
+        "name": "User",
+        "spriteCssClass": "permission"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 34,
+        "name": "R - Retention",
+        "spriteCssClass": "edit"
+    },
+    {
+      "parentResourceId": 34,
+      "resourceMappingId": 60,
+        "name": "User",
+        "spriteCssClass": "permission"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 35,
+        "name": "W - Online",
+        "spriteCssClass": "edit"
+    },
+    {
+      "parentResourceId": 35,
+      "resourceMappingId": 61,
+        "name": "User",
+        "spriteCssClass": "permission"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 36,
+        "name": "ADBAdministrator",
+        "spriteCssClass": "permission"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 37,
+        "name": "ADBDeveloper",
+        "spriteCssClass": "permission"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 38,
+        "name": "User",
+        "spriteCssClass": "permission"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 39,
+        "name": "Admin - Administrator",
+        "spriteCssClass": "role"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 40,
+        "name": "CA - Copy Acceptance",
+        "spriteCssClass": "role"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 41,
+        "name": "Legal - Legal",
+        "spriteCssClass": "role"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 42,
+        "name": "Marketing - Marketing",
+        "spriteCssClass": "role"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 43,
+        "name": "TAG PM - TAG PM",
+        "spriteCssClass": "role"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 44,
+        "name": "Traffic - Traffic",
+        "spriteCssClass": "role"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 45,
+        "name": "A - Ads",
+        "spriteCssClass": "module"
+    },
+    {
+      "parentResourceId": 45,
+      "resourceMappingId": 62,
+        "name": "User",
+        "spriteCssClass": "permission"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 46,
+        "name": "B - Billing",
+        "spriteCssClass": "module"
+    },
+    {
+      "parentResourceId": 46,
+      "resourceMappingId": 63,
+        "name": "User",
+        "spriteCssClass": "permission"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 47,
+        "name": "D - Direct Mail",
+        "spriteCssClass": "module"
+    },
+    {
+      "parentResourceId": 47,
+      "resourceMappingId": 64,
+        "name": "User",
+        "spriteCssClass": "permission"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 48,
+        "name": "I - Inserts",
+        "spriteCssClass": "module"
+    },
+    {
+      "parentResourceId": 48,
+      "resourceMappingId": 65,
+        "name": "User",
+        "spriteCssClass": "permission"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 49,
+        "name": "W - Wraps",
+        "spriteCssClass": "module"
+    },
+    {
+      "parentResourceId": 49,
+      "resourceMappingId": 66,
+        "name": "User",
+        "spriteCssClass": "permission"
+    },
+    {
+      "parentResourceId": 3,
+      "resourceMappingId": 50,
+        "name": "R - Renewals",
+        "spriteCssClass": "module"
+    },
+    {
+      "parentResourceId": 50,
+      "resourceMappingId": 67,
+        "name": "User",
+        "spriteCssClass": "permission"
+    },
+    {
+        "parentResourceId": null,
+        "resourceMappingId": 4,
+        "name": "CircManagerRestriction",
+        "spriteCssClass": "application"
+    },
+    {
+        "parentResourceId": null,
+        "resourceMappingId": 5,
+        "name": "CircManagerNetExt",
+        "spriteCssClass": "application"
+    },
+    {
+        "parentResourceId": null,
+        "resourceMappingId": 6,
+        "name": "CircManagerNetIntl",
+        "spriteCssClass": "application"
+    },
+    {
+        "parentResourceId": null,
+        "resourceMappingId": 7,
+        "name": "AuthorizationCampaign",
+        "spriteCssClass": "application"
+    },
+    {
+        "parentResourceId": null,
+        "resourceMappingId": 8,
+        "name": "DMCampaign",
+        "spriteCssClass": "application"
+    }
+]

@@ -1,0 +1,194 @@
+[
+    {
+        "name": "ADB Groups",
+        "sub": [
+            {
+                "name": "BangaloreDevTeam",
+                "expanded": true,
+                "sub": [
+                    {
+                        "id": 1,
+                        "accountName": "ay",
+                        "name": "Amulya Yadagani",
+                        "spriteCssClass": "person"
+                    },
+                    {
+                        "id": 2,
+                        "accountName": "at",
+                        "name": "Anant Tripathi",
+                        "spriteCssClass": "person"
+                    },
+                    {
+                        "id": 3,
+                        "accountName": "db",
+                        "name": "Debasis Behera",
+                        "spriteCssClass": "person"
+                    },
+                    {
+                        "id": 4,
+                        "accountName": "jp",
+                        "name": "Jaleswar Putel",
+                        "spriteCssClass": "person"
+                    },
+                    {
+                        "id": 5,
+                        "accountName": "jh",
+                        "name": "Jasmine Hirpara",
+                        "spriteCssClass": "person"
+                    },
+                    {
+                        "id": 6,
+                        "accountName": "pd",
+                        "name": "Pankhuri Dhingra",
+                        "spriteCssClass": "person"
+                    },
+                    {
+                        "id": 7,
+                        "accountName": "pk",
+                        "name": "Priya krishnasamy",
+                        "spriteCssClass": "person"
+                    },
+                    {
+                        "id": 8,
+                        "accountName": "ss",
+                        "name": "Sabyasachi Senapati",
+                        "spriteCssClass": "person"
+                    },
+                    {
+                        "id": 9,
+                        "accountName": "sk",
+                        "name": "Satish Kumar",
+                        "spriteCssClass": "person"
+                    },
+                    {
+                        "id": 10,
+                        "accountName": "sv",
+                        "name": "Siddhi Vinayaka",
+                        "spriteCssClass": "person"
+                    },
+                    {
+                        "id": 11,
+                        "accountName": "sc",
+                        "name": "Sunesh Choudhary",
+                        "spriteCssClass": "person"
+                    },
+                    {
+                        "id": 12,
+                        "accountName": "sp",
+                        "name": "Swagatika Panda",
+                        "spriteCssClass": "person"
+                    },
+                    {
+                        "id": 13,
+                        "accountName": "tv",
+                        "name": "ThulasiPriya.V",
+                        "spriteCssClass": "person"
+                    },
+                    {
+                        "id": 14,
+                        "accountName": "va",
+                        "name": "Vikas Arora",
+                        "spriteCssClass": "person"
+                    }
+                ],
+
+                "spriteCssClass": "group"
+            }
+        ],
+        "spriteCssClass": "k-icon k-i-folder"
+    },
+    {
+        "name": "AD Groups",
+        "spriteCssClass": "k-icon k-i-folder"
+    },
+    {
+        "name": "Individuals",
+        "spriteCssClass": "k-icon k-i-folder",
+        "sub": [
+            {
+                "id": 15,
+                "accountName": "ay",
+                "name": "Amulya Yadagani",
+                "spriteCssClass": "person"
+            },
+            {
+                "id": 16,
+                "accountName": "at",
+                "name": "Anant Tripathi",
+                "spriteCssClass": "person"
+            },
+            {
+                "id": 17,
+                "accountName": "db",
+                "name": "Debasis Behera",
+                "spriteCssClass": "person"
+            },
+            {
+                "id": 18,
+                "accountName": "jp",
+                "name": "Jaleswar Putel",
+                "spriteCssClass": "person"
+            },
+            {
+                "id": 19,
+                "accountName": "jh",
+                "name": "Jasmine Hirpara",
+                "spriteCssClass": "person"
+            },
+            {
+                "id": 20,
+                "accountName": "pd",
+                "name": "Pankhuri Dhingra",
+                "spriteCssClass": "person"
+            },
+            {
+                "id": 21,
+                "accountName": "pk",
+                "name": "Priya krishnasamy",
+                "spriteCssClass": "person"
+            },
+            {
+                "id": 22,
+                "accountName": "ss",
+                "name": "Sabyasachi Senapati",
+                "spriteCssClass": "person"
+            },
+            {
+                "id": 23,
+                "accountName": "sk",
+                "name": "Satish Kumar",
+                "spriteCssClass": "person"
+            },
+            {
+                "id": 24,
+                "accountName": "sv",
+                "name": "Siddhi Vinayaka",
+                "spriteCssClass": "person"
+            },
+            {
+                "id": 25,
+                "accountName": "sc",
+                "name": "Sunesh Choudhary",
+                "spriteCssClass": "person"
+            },
+            {
+                "id": 26,
+                "accountName": "sp",
+                "name": "Swagatika Panda",
+                "spriteCssClass": "person"
+            },
+            {
+                "id": 27,
+                "accountName": "tv",
+                "name": "ThulasiPriya.V",
+                "spriteCssClass": "person"
+            },
+            {
+                "id": 28,
+                "accountName": "va",
+                "name": "Vikas Arora",
+                "spriteCssClass": "person"
+            }
+        ]
+    }
+]

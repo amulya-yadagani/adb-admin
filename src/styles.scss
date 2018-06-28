@@ -1,0 +1,389 @@
+
+$accent: #D6EDFF;
+$text-color: #000000;
+$font-size: 12px;
+
+@import "~@progress/kendo-theme-default/scss/all";
+@import "styles-variables.scss";
+
+html {
+    height: $full-height;
+    color: #000000;
+}
+
+body {
+    font-family: $font-family !important;
+    font-size: $default-font-size;
+    height: $full-height;
+    margin: 0px;
+}
+
+nav {
+    padding: 10px 0px;
+    background-color: $nav-background;
+    color: $color-white;
+}
+
+.k-splitter .k-scrollable{
+    overflow: hidden;
+}
+
+.k-state-hover {
+    background: $hover-background !important;
+    color: $color-black !important;
+}
+
+ul[role='group'] > li .k-in:hover {
+    cursor: pointer;
+}
+
+.k-treeview .k-in.k-state-selected {
+    background-color: transparent;
+}
+
+#accounts-pane {
+    height: $full-height;
+    overflow: hidden;
+}
+
+.tooltipClass .treenodeTooltip:hover {
+    display:none;
+}
+
+.tooltipClass {
+    display:none;
+    position: absolute;
+    z-index: 1000;
+    background-color:$color-background-tooltip;
+    color: $color-black;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px 5px;
+    @include border-radius(4px);
+    font-size: $default-font-size - 1px;
+    @include outer-box-shadow(2px 2px $color-shadow);
+}
+
+.copyClass{
+    color: $color-black;
+    font-size: $default-font-size;
+    cursor:pointer;
+    padding:2px;
+}
+
+.copyClass:hover{
+    color:$color-black;
+}
+
+.copyClass:active{
+    color:green;
+}
+
+.k-button {
+    vertical-align: initial;
+}
+
+.k-grid td {
+    padding: 4px 12px;
+}
+
+.k-filter-row th {
+    padding: 6px;
+}
+
+//fix for IE 11 hover or focus issue
+.k-treeview .k-in {
+    border-radius: 2px;
+    margin: 0;
+    padding: 4px 8px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    flex-shrink: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+.logo {
+  @include background-imageUrlWithPosition-settings("assets/logo.png", initial, 0px, -5px);
+  min-width: 36px;
+}
+
+.folder {
+    @include background-imageUrlWithPosition-settings("assets/folder.png", contain, 0px, 0px);
+    min-width: 16px;
+    pointer-events: none;
+    //background-image: url("assets/folder.png");
+    //background-position-x: -5px;
+}
+
+.group,.groupdefault {
+    @include background-imageUrlWithPosition-settings("assets/group.png", contain, 0px, 0px);
+    min-width: 16px;//fix for issue in IE 11
+    //background-image: url("assets/group.png");
+    //background-position: -4px -4px;
+    //line-height: inherit !important;
+}
+
+.person {
+    @include background-imageUrlWithPosition-settings("assets/person.png", contain, 0px, 0px);
+    min-width: 16px;
+    //background-image: url("assets/person.png");
+    //background-position: -1px -4px;
+}
+
+.role {
+    //@include background-imageUrlWithPosition-settings("assets/role.png", contain, 0px, 0px);
+    background-image: url("assets/role.png");
+    background-position: -2px -1px;
+}
+
+.application {
+    background-image: url("assets/application.png");
+    background-position: -2px -4px;
+}
+
+.cluster {
+    background-image: url("assets/cluster.png");
+    background-position: -3px -4px;
+}
+
+.permission {
+    background-image: url("assets/permission.png");
+    background-position: -3px -2px;
+}
+
+.authority {
+    background-image: url("assets/authority.png");
+    background-position: 0px -2px;
+}
+
+.current {
+    background-image: url("assets/current.png");
+    background-position: -4px -4px;
+}
+
+.division {
+    background-image: url("assets/division.png");
+    background-position: -3px -2px;
+}
+
+.individual {
+    background-image: url("assets/individual.png");
+    background-position: -3px -2px;
+}
+
+.individuals {
+    background-image: url("assets/individuals.png");
+    background-position: -3px -2px;
+}
+
+.permissiongroup {
+    background-image: url("assets/permissiongroup.png");
+    background-position: -3px -2px;
+}
+
+.provisional {
+    background-image: url("assets/provisional.png");
+    background-position: -3px -2px;
+}
+
+.edit,.jobrequest {
+    @include background-imageUrlWithPosition-settings("assets/edit.png", contain, 0px, 0px);
+    min-width: 16px;//fix for issue in IE 11
+    /* background-image: url("assets/edit.png");
+    background-position: -1px -1px; */
+}
+
+.title,.publisher {
+    background-image: url("assets/title.png");
+    background-position: -3px -2px;
+}
+
+.module,.source,.node {
+    @include background-imageUrlWithPosition-settings("assets/module.png", contain, 0px, 0px);
+    min-width: 16px;//fix for issue in IE 11
+    /* background-image: url("assets/module.png");
+    background-position: 0px -1px; */
+}
+
+.noimage {
+  background-image: url("assets/noimage.png");
+  background-position: -5px -4px;
+}
+
+#notification {
+    display: block;
+    width: 15%;
+    top: -20px;
+    left: 1px;
+    right: 1px;
+    margin: 0px auto;
+    border: 1px solid #cccccc;
+    padding: 7px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24);
+    position: absolute;
+    z-index: 5;
+    background-color: #FFFFFF;
+    font-size: $default-font-size;
+    transition: top .3s cubic-bezier(.11,-0.45,1,1);
+}
+
+//Loader from https://github.com/raphaelfabeni/css-loader#default
+.loader {
+  color:#fff;
+  position:fixed;
+  box-sizing:border-box;
+  left:-9999px;
+  top:-9999px;
+  width:0;
+  height:0;
+  overflow:hidden;
+  z-index:999999
+}
+
+.loader:after,.loader:before {
+  box-sizing:border-box;
+  display:none
+}
+
+.loader.is-active {
+  background-color:rgba(0,0,0,.65);
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+}
+
+.loader.is-active:after,.loader.is-active:before {
+  display:block;
+}
+
+.loader-default:after {
+  content: '';
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  border: solid 8px #fff;
+  border-left-color: transparent;
+  border-radius: 50%;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+	to {
+		transform:rotate(359deg)
+	}
+}
+
+
+//navigation via tabs global css
+.nav-tabs-modified {
+    /* position: relative;
+    height: 5vh;
+    border-bottom: none !important; */
+    li {
+        //border-radius: 0px;
+        a {
+            height: 30px;
+            padding: 2px 10px !important;
+            color: $color-black;
+            margin: 0px;
+            border-radius: 0px;
+            //border-left: none;
+            cursor: pointer;
+            @include backgroundGradientTopDown(#D5D5D5, #EDEDED);
+            line-height: 26px !important;
+        }
+
+        .active, .active:hover {
+            border-top:1px solid $color-outer-border;
+            border-right:1px solid $color-outer-border;
+            border-left:1px solid $color-outer-border;
+            background :$color-white !important;
+            border-bottom: none;
+        }
+    }
+}
+
+.k-link, .k-header {
+    text-align: left;
+}
+
+#rtImg{
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+/* centres the image */
+.k-grid .k-button-icontext .k-icon {
+    margin: 0px;
+}
+
+.k-resize-handle {
+    background: none !important;
+}
+
+.excluded {
+  color: red;
+}
+
+.root {
+  position: absolute;
+  display: block;
+  font-size: 2em;
+  margin: 0 auto;
+  text-align: center;
+  left: 1px;
+  right: 1px;
+  top: calc(50% - 1em);
+}
+
+.k-window-titlebar {
+  padding: 5px 10px;
+}
+
+.k-dialog-buttongroup {
+  border: 0;
+  padding: 5px 0;
+  justify-content: center;
+
+  .k-button {
+    padding: 10px;
+    margin: 0 3px;
+    border-width: 1px;
+    flex: 0;
+    background-color: #f6f6f6;
+    border-color: rgba(0, 0, 0, 0.08);
+  }
+
+  .k-button.k-primary {
+    color: #000000;
+    background: #D6EDFF;
+  }
+}
+
+.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+#k-ui-r-grid tr.k-state-selected,#k-ui-rt-grid tr.k-state-selected{
+  cursor: pointer;
+}
+
+.k-multicheck-wrap {
+  max-height: 100px;
+}

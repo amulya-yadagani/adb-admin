@@ -1,0 +1,13 @@
+@import "../../../styles-variables.scss";
+
+.k-grid td, .k-grid td span {
+    padding: 2px;
+}
+.k-grid > table > tbody > tr:hover,
+.k-grid-content > table > tbody > tr:hover
+{
+  @include backgroundGradientTopDown($color-selected-top, $color-selected-bottom);
+}
+.k-grid-content > table > tbody > tr > td > span, span.inActiveUser {
+  white-space: nowrap;
+}

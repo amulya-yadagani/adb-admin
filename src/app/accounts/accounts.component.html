@@ -1,0 +1,33 @@
+<div id="accounts-panel" class="panel panel-default">
+    <div class="panel-heading panel-heading-modified">
+      <span>Accounts</span>
+      <div id="filter-con">
+        Show
+        <span id="filter-label">{{ACCOUNT_ALL}}</span>
+        <ul id="filter-menu">
+          <li>{{ACCOUNT_ALL}}</li>
+          <li>{{ACCOUNT_ACTIVE}}</li>
+          <li>{{ACCOUNT_INACTIVE}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="panel-body">
+
+        <div class="search-container">
+          <div class="search">
+            <input id="search-box" type="text" placeholder="Search" #searchBox>
+            <!-- <span id="search-wait" class="k-icon"></span> -->
+          </div>
+
+          <ul id="search-results"></ul>
+          <button id="clearBtn" class="k-button" (click)="reset(searchBox)">Clear</button>
+        </div>
+
+        <div id="accounts"></div>
+    </div>
+    <!-- <ul id="filter-context-menu">
+      <li>Active accounts</li>
+      <li>Inactive accounts</li>
+      <li>Reset</li>
+    </ul> -->
+</div>

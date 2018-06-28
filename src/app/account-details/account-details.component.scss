@@ -1,0 +1,149 @@
+@import "../../styles-variables.scss";
+
+#account-form {
+  padding: 5px;
+}
+.account-details-container {
+  height: 100%;
+    #vertical {
+        height: calc(100% - 25px);
+        width: 100%;
+        position: relative;
+        .k-splitbar, .k-state-default, .k-splitbar-vertical {
+            background: #01F201 !important;
+        }
+    }
+    .account-header-container{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        /* height: 4vh; */
+        width: 100%;
+        .account-header-name {
+            margin: 0px;
+        }
+    }
+    .account-fields-container {
+        display: flex;
+        justify-content: space-around;
+        #emailFieldLabel {
+            min-width: 9.9rem;
+        }
+        #phoneFieldLabel {
+            min-width: 9.9rem;
+        }
+        .account-fields-sub-container {
+            flex: 0.5;
+            text-align: center;
+
+        }
+    }
+
+
+
+    .account-fields-nav-container {
+        .account-fields-nav-links {
+            display: flex;
+            justify-content: space-between;
+            .nav-link-modified {
+                height: 2.5em;
+                li {
+                    height: 2em;
+                    a {
+                        padding-bottom: 0em;
+                        color: $color-black;
+                        min-width: 6em;
+                        text-align: center;
+                        cursor: pointer;
+                        @include selected-gradient-background($inner-panelTab-top-background, $inner-panelTab-bottom-background);
+                        border-radius: 0px;
+                    }
+                    a:hover {
+                        @include selected-gradient-background($hover-background, $hover-background);
+                        transition: 1s;
+                    }
+                    .active, .active:hover {
+                        background :$color-white !important;
+                        border-bottom: none !important;
+                    }
+                }
+            }
+        }
+        .account-sub-router {
+            height: calc(100% - 30px);
+        }
+    }
+}
+
+#account-fields-left-container, #account-fields-right-container {
+    .ng-invalid, .ng-invalid:focus {
+        color: $error-msg;
+        border: 1px solid $error-msg;
+        outline-style: none;
+    }
+    padding: 1px 0px !important;
+    label {
+        min-width: 8.5em;
+        text-align: right;
+        padding: 0em 0.4em 0em 1em;
+    }
+    label::after {
+        content: " "
+    }
+    .accountField {
+        width: 50%;
+    }
+    input[disabled] {
+        color: #7a7979;
+    }
+    .errorMsg {
+        position: absolute;
+        background: darkorange;
+        width: 22px;
+        text-align: center;
+        height: 22px;
+        line-height: 1.4;
+        border-radius: 20px;
+    }
+    #phoneErrorMsg {
+        display: none;
+    }
+    span {
+        text-align: left;
+        display: inline-block;
+        width: 50%;
+
+        input {
+          width: auto;
+        }
+    }
+}
+
+.accountDetailsContainer {
+    display: flex;
+    justify-content: space-around;
+    .accountDetailsSubContainer {
+        flex: 0.5;
+        text-align: center;
+        label {
+            min-width: 8em;
+            text-align: right;
+        }
+        label::after {
+            content: "  "
+        }
+    }
+}
+.account-btns-section {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    .account-btn {
+        flex: 1;
+        color: $color-black;
+    }
+}
+
+

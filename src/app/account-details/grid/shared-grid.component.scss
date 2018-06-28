@@ -1,0 +1,18 @@
+#grid-account-details {
+    height: 98%;    
+    .k-grid-toolbar {
+        .cust-grid-toolbar {
+            font-size: 2em !important;
+            background-color: black !important;
+        }
+    }
+    .k-link, .k-header {
+        text-align: left !important;
+    }
+    .k-grid-content {
+        overflow:hidden !important;
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
+    }
+}
+

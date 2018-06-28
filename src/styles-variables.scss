@@ -1,0 +1,111 @@
+$color-white: #ffffff;
+$color-black: #000000;
+$color-shadow: #cccccc;
+$color-inActive: #FCAF6B;
+$color-background-tooltip: #F7F8FA;
+$color-outer-border: #BFBFBF;
+$color-inner-border: #FDFDFD;
+$default-font-size: 12px;
+$full-width: 100%;
+$full-height: 100%;
+$font-family: Arial, sans-serif;
+$nav-background : #484848; //Navigation Background Color
+$nav-button-active-background : #0097FC;
+$nav-button-hover-background : #747474;
+$outter-Panel-Background : #BFBFBF;  //Outter Background Color
+$inner-PanelTab-Background : #D5D5D5;  //Inner Background color of Tab or Panel
+$inner-panelTab-top-background : #D5D5D5;  //Inner Background color of Tab or Panel
+$inner-panelTab-bottom-background : #EDEDED; //Inner Background color of Tab or Panel
+$hover-background : #FBE0A1;  //tree structure  background hover color
+
+$error-msg : #A94442;
+$color-selected-top : #FBE0A1;
+$color-selected-bottom : #FCD4A6;
+
+$color-table-top-head : #838383;
+$color-table-mid-head : #232323;
+$color-table-bottom-head : #484801;
+
+//------------------default use cases------------------//
+$h1 : 2em;
+$h2 : 1.5em;
+$h3 : 1.3em;
+$h4 : 1em;
+$h5 : 0.8em;
+$h6 : 0.7em;
+
+//-----------------------------------------------------//
+
+
+//----------------Text customization-------------------//
+@mixin strong-font($args...) {
+    font-weight: $args;
+}
+@mixin text-placement($args...) {
+    text-align: $args;
+}
+//-----------------------------------------------------//
+
+//----------------Background & Image-------------------//
+@mixin selected-gradient-background($args...) {
+    background : webkit-linear-gradient($args) !important;
+    background: -o-linear-gradient($args) !important;
+    background: -moz-linear-gradient($args) !important;
+    background: linear-gradient($args) !important;
+}
+@mixin background-imageUrl($path, $size) {
+    background-image: url($path);
+    background-size: $size !important;
+}
+@mixin background-position-settings($horizontal, $vertical) {
+    background-position: $horizontal $vertical !important;
+}
+@mixin background-imageUrlWithPosition-settings($path, $size, $horizontal, $vertical) {
+    @include background-imageUrl($path, $size);
+    @include background-position-settings($horizontal, $vertical);
+    background-repeat: no-repeat;
+}
+
+@mixin backgroundGradientTopDown($top, $down) {
+    background: -webkit-linear-gradient($top, $down); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($top, $down); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($top, $down); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($top, $down); /* Standard syntax (must be last) */
+}
+//------------------------------------------------------//
+
+
+//--------------------Box modal-------------------------//
+@mixin border-radius($args...) {
+    -webkit-border-radius:$args;
+    -moz-border-radius:$args;
+    border-radius:$args;
+}
+//-----------------------------------------------------//
+
+//----------------box customization------------------------//
+@mixin outer-box-shadow($args...) {
+    -webkit-box-shadow: $args;
+    -moz-box-shadow: $args;
+    box-shadow: $args;
+}
+//-----------------------------------------------------//
+
+@mixin border($args...) {
+    -webkit-border: $args;
+}
+
+//----------overwrite kendo styles---------------------//
+.k-i-sort-desc-sm,  .k-i-sort-asc-sm {
+    color: $color-white !important;
+}
+.k-link, 
+.k-header {
+    //@include selected-gradient-background($color-table-top-head, $color-table-mid-head, $color-table-bottom-head);
+    //text-align: center;
+    //color: white !important;
+}
+.k-state-selected {
+    //@include selected-gradient-background($color-selected-top, $color-selected-bottom);
+}
+//-----------------------------------------------------//

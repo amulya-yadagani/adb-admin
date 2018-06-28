@@ -1,0 +1,69 @@
+<nav id="header-nav">
+    <span class="logo"></span>
+    <h3 id="title">ADB Administrator</h3>
+    <span class="user">Welcome <span>{{user.displayName}}</span></span>
+    <ul class="nav nav-tabs cust-header-nav-links">
+        <li id="actions-item">
+            <button id="actions-btn" class="k-button cust-header-nav-btn">Actions</button>
+            <ul id="actions">
+                <li (click)="newApp(newAppRef)" id="newApp"><span class="k-icon k-i-plus"></span>Add New Application</li>
+            </ul>
+        </li>
+        <li><button id="saveAll" [disabled]="!enableSave" class="k-button cust-header-nav-btn" (click)="onSaveAll()">Save All</button></li>
+        <li><button class="k-button cust-header-nav-btn">About</button></li>
+    </ul>
+</nav>
+<ng-template #newAppRef>
+    <form #appForm="ngForm" id="appForm" class="k-form-inline">
+        <div class="k-popup-edit-form k-window-content k-content">
+        <div class="k-edit-form-container">
+        <label class="k-form-field"><span>Name</span>
+            <input #appName="ngModel" type="text" class="k-textbox" id="name" name="name" [(ngModel)]="name" pattern="[a-zA-Z0-9 _-]*" required/>
+        </label>
+        <label *ngIf="appName.errors && (appName.dirty || appName.touched)" class="k-form-field error-field"><span></span>
+            <div [hidden]="!appName.errors.required">
+            <span class="k-icon k-i-warning"></span>
+                Name is required
+            </div>
+            <div [hidden]="!appName.hasError('pattern')">
+                <span class="k-icon k-i-warning"></span>
+                Name is invalid
+            </div>
+        </label>
+        <label class="k-form-field"><span>Description</span>
+            <input #appDescription="ngModel" type="text" class="k-textbox" name="description" [(ngModel)]="description" required/>
+        </label>
+        <label *ngIf="appDescription.errors && (appDescription.dirty || appDescription.touched)" class="k-form-field error-field"><span></span>
+            <div [hidden]="!appDescription.errors.required">
+            <span class="k-icon k-i-warning"></span>
+            Description is required
+            </div>
+        </label>
+        <div class="k-edit-buttons k-state-default">
+            <button role="button" class="k-button k-button-icontext k-primary k-grid-update" [disabled]=!appForm.form.valid (click)="onSubmit($event,appForm)"><span class="k-icon k-i-check"></span>Ok</button>
+            <button role="button" class="k-button k-button-icontext k-grid-cancel" (click)="dialog.close()"><span class="k-icon k-i-cancel"></span>Cancel</button></div>
+        </div>
+        </div>
+    </form>
+</ng-template>
+<div id="divided-box">
+    <adb-account-panel id="ac-panel"></adb-account-panel>
+    <div id="tab-panel">
+        <ul id="tabs" class="nav nav-tabs nav-tabs-modified">
+            <!-- <li><a [routerLink]="['/resources']" routerLinkActive="active">Application Resources</a></li>
+            <li><a [routerLink]="['/accountDetails']" routerLinkActive="active">Account Details</a></li>
+            <li><a [routerLink]="['/impersonation']" routerLinkActive="active">Impersonation</a></li>
+            <li><a [routerLink]="['/users']" routerLinkActive="active">Application Users</a></li>
+            <li><a [routerLink]="['/auditLog']" routerLinkActive="active">Audit Log</a></li> -->
+            <li *ngFor="let tab of tabs">
+              <a [routerLink]="tab.link" routerLinkActive="active">{{tab.title}}</a>
+            </li>
+        </ul>
+        <div id="tabBody">
+            <!-- <div kendoDialogContainer></div> -->
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    <adb-resource-manager id="resource-panel"></adb-resource-manager>
+</div>
+<div kendoDialogContainer></div>

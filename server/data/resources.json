@@ -1,0 +1,44 @@
+[
+    {   
+        "resourceMappingId": 500,
+        "type": "Application",
+        "name": "Job Tracker",
+        "description": "Job Tracker"
+    },
+    {   
+        "resourceMappingId": 501,
+        "type": "Cluster",
+        "name": "AMERICAN EXPRESS",
+        "description": ""
+    },
+    {
+        "resourceMappingId": 502,
+        "type": "Cluster",
+        "name": "BOOK MATRIX",
+        "description": ""
+    },
+    {   
+        "resourceMappingId": 503,
+        "type": "Permission",
+        "name": "CATEGORY TEST",
+        "description": ""
+    },
+    {   
+        "resourceMappingId": 504,
+        "type": "Title",
+        "name": "EMAIL",
+        "description": ""
+    },
+    {   
+        "resourceMappingId": 505,
+        "type": "JobRequest",
+        "name": "D",
+        "description": "Direct Mail"
+    },
+    {   
+        "resourceMappingId": 506,
+        "type": "Module",
+        "name": "ONLINE",
+        "description": ""
+    }
+]

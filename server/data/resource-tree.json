@@ -1,0 +1,92 @@
+[
+  {
+		"parentId": null,
+		"resourceMappingId": 1,
+    "name": "CircManagerNet",
+    "spriteCssClass": "application"
+	},
+	{
+		"parentId": 1,
+    "resourceMappingId": 2,
+    "name": "AMERICAN EXPRESS",
+    "spriteCssClass": "cluster"
+  },
+  {
+    "parentId": 2,
+    "resourceMappingId": 6,
+    "name": "DM_MARKETING_USER",
+    "spriteCssClass": "role"
+  },
+  {
+    "parentId": 2,
+    "resourceMappingId": 7,
+    "name": "AB - Appt Books",
+    "spriteCssClass": "title"
+  },
+  {
+    "parentId": 2,
+    "resourceMappingId": 8,
+    "name": "AE - American Express Multi-Title",
+    "spriteCssClass": "title"
+  },
+  {
+    "parentId": 2,
+    "resourceMappingId": 9,
+    "name": "CC - F&W Connoisseur Club",
+    "spriteCssClass": "title"
+  },
+  {
+    "parentId": 2,
+    "resourceMappingId": 10,
+    "name": "WI - Food & Wine",
+    "spriteCssClass": "title"
+  },
+	{
+		"parentId": 1,
+    "resourceMappingId": 3,
+    "name": "NATIONAL GEOGRAPHIC",
+    "spriteCssClass": "cluster"
+  },
+  {
+    "parentId": 3,
+    "resourceMappingId": 11,
+    "name": "DM_MARKETING_USER",
+    "spriteCssClass": "role"
+  },
+  {
+    "parentId": 3,
+    "resourceMappingId": 12,
+    "name": "LS - Little Kids",
+    "spriteCssClass": "title"
+  },
+  {
+    "parentId": 3,
+    "resourceMappingId": 13,
+    "name": "NA - NG Adventure",
+    "spriteCssClass": "title"
+  },
+  {
+    "parentId": 3,
+    "resourceMappingId": 14,
+    "name": "NG - National Geographic",
+    "spriteCssClass": "title"
+  },
+  {
+    "parentId": 3,
+    "resourceMappingId": 15,
+    "name": "TR - NG Traveler",
+    "spriteCssClass": "title"
+  },
+	{
+		"parentId": 1,
+    "resourceMappingId": 4,
+    "name": "FOREIGN AFFAIRS",
+    "spriteCssClass": "cluster"
+  },
+  {
+		"parentId": 1,
+    "resourceMappingId": 5,
+    "name": "HBR",
+    "spriteCssClass": "cluster"
+	}
+]
